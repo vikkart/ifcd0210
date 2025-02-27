@@ -15,10 +15,14 @@
      Una vez que lo tengamos, mostrar el texto "x tiene el número 6666"
      -->
     <?php
-    $numero = array("pepito"=>1111, "benganito"=>2222, "Jesifredo"=>3333);
+    $numero = array(
+        "pepito"=>1111, 
+        "benganito"=>2222, 
+        "Jesifredo"=>3333);
+        
     var_dump($numero);
     echo "<br><br>";
-    foreach ($numero as $clave => $valor /* numero */) {
+    foreach ($numero as $clave /* nombre */ => $valor /* numero */) {
         echo $clave . "; tlf: " . $valor . ".";
         echo "<br>";
     }
