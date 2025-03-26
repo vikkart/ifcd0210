@@ -31,18 +31,17 @@ function saludar ($hora){
     }
 };
 
-$hora_mañana = 6;
-echo saludar($hora_mañana) . " La hora de mañana es $hora_mañana";
+
+echo saludar(6);
 
 br();
 
-$hora_tarde = 15;
-echo saludar($hora_tarde) . " La hora de tarde es $hora_tarde";
+
+echo saludar(15);
 
 br();
 
-$hora_noche = 20;
-echo saludar($hora_noche) . " La hora de noche es $hora_noche";
+echo saludar(20);
 ?>
 </body>
 </html>

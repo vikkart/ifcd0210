@@ -20,6 +20,7 @@ $numero_2 = 2;
 function suma ($numero_1, $numero_2){
     echo $numero_1 + $numero_2;
 }
+//suma(1,2);
 suma ($numero_1, $numero_2);
 echo "<br>";
 function suma_2 ($numero_1, $numero_2){

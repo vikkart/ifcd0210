@@ -1,18 +1,33 @@
-*{
+* {
     background-color: black;
-    color: white; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-ul {
-    color:white;
-    }
-table{
+
+body {
+    color: white;
+}
+
+table {
     border: 1px solid white;
 }
-table td{
+
+table td {
     border-left: 1px solid white;
 }
-table caption{
+
+table caption {
     border: 1px solid white;
     background-color: rgba(117, 0, 0, 0.699);
+}
+
+li {
+    color: blueviolet;
+}
+
+ol {
+    color: yellow;
+}
+
+p {
+    color: lightgreen;
 }
