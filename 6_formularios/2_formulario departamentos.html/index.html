@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <form method="post" action="procesar.php">
+        <div id="formulario_contacto">
+            <fieldset>
+                <legend class="info">Formulario para usuarios</legend>
+                <label>Usuario:</label>
+                <br>
+                <input type="email" id="usuario" name="email" placeholder="Pepito"> 
+                <br>
+
+                <label class="info" for="contraseña">Contraseña:</label>
+                <br>
+                <input type="password" id="contraseña" name="contraseña" placeholder="****"> 
+                <br>
+
+                <label class="info">departamento:</label>
+                <br>
+                <input type="radio" id="compras" name="departamento" value="compras"> <label for="compras">Compras</label>
+                <br>
+                <input type="radio" id="ventas" name="departamento" value="ventas"> <label for="ventas">Ventas</label>
+                <br>
+                <input type="radio" id="ATC" name="departamento" value="ATC"> <label for="ATC">ATC</label>
+
+            </fieldset>
+            <input type="submit" id="boton" name="boton" value="Enviar">
+         </div>
+    </form>
+</body>
+</html>

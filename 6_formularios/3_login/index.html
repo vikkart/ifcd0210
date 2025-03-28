@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6_Formularios: 3.Login</title>
+    <style> 
+        fieldset{
+            background-color: rgb(216, 184, 245);
+            text-align: center;
+            margin: auto;
+        }
+        h1{
+            text-align: center;
+        }
+        #legend{
+            font-weight: bold;
+        }
+        #submit{
+            background-color: rgb(46, 49, 223);
+            font-weight: bolder;
+            color: white;
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Login</h1>
+    <form method="post" action="login.php">
+        <div> 
+            <fieldset style="width: 400px;">
+                <legend id="legend">Inicio de sesión</legend>
+                <label for="user-input">User: </label>
+                <input type="user" name="user" id="user-input" placeholder="Pepito">
+                <br>
+                <label for="password-input">Contraseña: </label>
+                <input type="password" name="password" id="contraseña-input" placeholder="***">
+            </fieldset>
+            <input type="submit" id="submit" value="ENVIAR">
+        </div>
+    </form>
+</body>
+
+</html>
