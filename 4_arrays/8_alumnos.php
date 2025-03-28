@@ -28,20 +28,16 @@ echo"<br>";
 
 /* * - Filtrar alumnos: funcion que recibe el array y un curso, y devuelve otro array con todos los alumnos que cumplen el criterio*/
 function filtrar_alumnos($array){
-    $filtro[ = array()];
+    $filtro = array();
     //$filtro = []; otra forma de ponerlo 
     foreach ($array as $alumno) {
-        if ($alumno['nota'] > 1) {
-                    $filtro[] = ['nombre' => $alumno['nombre'], 'curso' => $alumno['curso']];
-                    
+        if ($alumno['nota'] > .numero) {
+                    $filtro[] = ['nombre' => $alumno['nombre'], 'nota' => $alumno['nota'], 'curso' => $alumno['curso']];
                 }
             }
-            foreach ($filtro as $alumno_filtrado) {
-                echo "<li>" . $alumno_filtrado['nombre'] . '. Curso: ' . $alumno_filtrado['curso'] . "</li>";
-        }
-    };
-
-filtrar_alumnos($alumnos);
+    return $filtro;//recordar que me retorne esto
+};
+mostrar_nombres(filtrar_alumnos($alumnos));
 
 /* - Mostrar nota media: función que recibe un array de alumnos y devuelve la nota media */
 // funcion count
