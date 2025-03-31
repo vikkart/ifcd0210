@@ -42,6 +42,6 @@ mostrar_nombres(filtrar_alumnos($alumnos));
 /* - Mostrar nota media: función que recibe un array de alumnos y devuelve la nota media */
 // funcion count
 // foreach { $suma_notas = $suma_notas + $alumno['nota']}
-// foreach { $suma_notas = + $alumno['nota']}
+// foreach { $suma_notas += $alumno['nota']}
 
 ?>
