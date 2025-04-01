@@ -15,8 +15,8 @@
 
 // leer pelis.json
 file_get_contents("pelis.json");
-//convertir pelis.json a array
 $pelisarray = file_get_contents("pelis.json");
+//convertir pelis.json a array
 var_dump($pelisarray);
 $pelis = json_decode($pelisarray, true);
 echo '<pre>' . print_r($pelis, true) . '</pre>';
@@ -34,7 +34,10 @@ foreach ($pelis as $pelis) {
     echo "<tr>";
     echo "<td>" . $pelis['titulo'] . "</td>";
     echo "<td>" . $pelis['director'] . "</td>";
-    echo "<td>" . implode(", ", $pelis['genero']) . "</td>";
+    foreach ($pelis['genero'] as $key => $genero) {
+        echo "<td>" . "$genero " . "</td>";
+    }
+    //echo "<td>" . implode(", ", $pelis['genero']) . "</td>";
     echo "</tr>";
     //implode(", ", $pelicula['genero']): Une los géneros en una sola línea con comas.
 }

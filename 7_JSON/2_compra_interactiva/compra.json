@@ -4,7 +4,7 @@
         "precio": 3.99
     },
     {
-        "producto": "café",
+        "producto": "caf\u00e9",
         "precio": 2.75
     },
     {
@@ -16,11 +16,15 @@
         "precio": 2.29
     },
     {
-        "producto": "jamón",
+        "producto": "jam\u00f3n",
         "precio": 3.25
     },
     {
         "producto": "pipshas",
         "precio": 9.99
+    },
+    {
+        "producto": "chori",
+        "precio": "9.99"
     }
 ]
