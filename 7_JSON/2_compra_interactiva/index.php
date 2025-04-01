@@ -20,8 +20,13 @@ function mostrarLista()
     <h1>Mi lista de la compra</h1>
 
     <form action="añadir.php" method="post">
-    <input type="text" name="producto">
-    <input type="text" name="precio">
+    <p>Producto: </p>
+    <input type="text" name="producto" placeholder="chorizo">
+    <br>
+    
+    <p>Precio: </p>
+    <input type="number" name="precio" step="0.01" placeholder="9.99"> €
+    <br>
     <input type="submit"> 
     </form>
 

@@ -1,6 +1,7 @@
 <?php
 // Sacar el producto y el precio de $_POST
-
+$producto = $_GET['producto'];
+$precio = $_GET['precio'];
 // Sacar el contenido de compra.json (es un string)
 
 // Convertir el contenido de compra.json de string a un array  (json_decode(...))
